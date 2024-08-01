@@ -22,7 +22,7 @@ public class LoginStepDefinition {
 	WebDriver driver;
 	
 	@Given("^user is present on the first page of the website$")
-	public void user_present_on_first_page () {
+	public void user_present_n_first_page () {
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\hp\\eclipse-workspace\\FreeCrmBDDFramework\\Drivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
 //	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp\\eclipse-workspace\\FreeCrmBDDFramework\\Drivers\\chromedriver.exe");
