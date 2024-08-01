@@ -30,13 +30,13 @@ public class HooksTest {
 		System.out.println("Logout the application");
 		System.out.println(sc.getStatus());
 	}
-//	@BeforeStep
-//	public void takeScreenShot() {
-//		System.out.println("Screen Shot");
-//	}
-//	@AfterStep
-//	public void refresh() {
-//		System.out.println("REFRESH");
-//	}
+	@BeforeStep
+	public void takeScreenShot() {
+		System.out.println("Screen Shot");
+	}
+	@AfterStep
+	public void refresh() {
+		System.out.println("REFRESH");
+	}
 
 }

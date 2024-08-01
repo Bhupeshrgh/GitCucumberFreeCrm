@@ -11,7 +11,7 @@ Feature: FreeCrm login Feature
 #Then user is on the home page
 
 
-#With Scenario Outline and Examples keyword
+#With Examples keyword
 Scenario Outline: FreeCrm login functionality Testing Scenario
 
 Given user is present on the first page of the website
@@ -28,4 +28,12 @@ Examples:
 	| bhupesh@gmail.com | Bhupesh@ |
 	
 
+
+
+
+
+
+#Scenario: User creating new contact
+#Given user is already on the home page
+#When user is 
 
