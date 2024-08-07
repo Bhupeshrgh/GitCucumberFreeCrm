@@ -141,7 +141,25 @@ public class HashMapTest {
 	  	         			     
 	         					System.out.println(entry.getKey() + " " + entry.getValue());	  	         			     
 	  	         			   }
-	         			     
+// 	Word occurrence in a string       	
+	     String strCapgemini =  "Java is java again java";
+	             
+	             String[] arr = strCapgemini.toLowerCase().split(" ");
+	             
+	             HashMap<String, Integer> hmCap = new HashMap<>();
+	             
+	            for(String ss : arr){                  // For each loop can be used for non primitive data types
+	               
+	               if(hmCap.containsKey(ss)){
+	                 
+	            	   hmCap.put(ss, hmCap.get(ss)+1);
+	                 
+	               }else{
+	            	   hmCap.put(ss, 1);
+	               }	               
+	             }
+	             System.out.println(hmCap);
+	             
 //   {Fruit : Mango, Orange, Apple}, {Vegetable : Carrot, Radish, Onion}, {Flower : Rose, Jasmine, Orchid}
 	        
 	}

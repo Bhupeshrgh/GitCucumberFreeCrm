@@ -1,97 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="60.356">
-<testcase classname="Free Crm contacts creation Feature" name="FreeCrm contacts creation Testing Scenario" time="0.192">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user is present on the home page after loggedin.......................undefined
-When user is on the first page..............................................skipped
-Then user clicks on login option............................................skipped
-Then user enters "bhupeshrgh@gmail.com" and "Bhupesh@123"...................skipped
-Then user clicks on login button............................................skipped
-Then user is on the home page...............................................skipped
-Then close the browser......................................................skipped
-]]></failure>
-</testcase>
-<testcase classname="Free Crm contacts creation Feature" name="FreeCrm contacts creation Testing Scenario 2" time="0.013">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user is present on the home page after loggedin.......................undefined
-When user is on the first page..............................................skipped
-Then user clicks on login option............................................skipped
-Then user enters "bhupesh@gmail.com" and "Bhupesh@".........................skipped
-Then user clicks on login button............................................skipped
-Then user is on the home page...............................................skipped
-Then close the browser......................................................skipped
-]]></failure>
-</testcase>
-<testcase classname="FreeCrm login Feature" name="FreeCrm login functionality Testing Scenario" time="33.191">
-<failure message="Unable to locate element: *[name='email']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'LAPTOP-SUKV6OAG', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [fd1068ba-f89f-4412-98fb-7c3330b6afe2, findElement {using=name, value=email}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220216172458, moz:debuggerAddress: localhost:49454, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 8944, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49454/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: fd1068ba-f89f-4412-98fb-7c3330b6afe2" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is present on the first page of the website......................passed
-When title on the first page is Free CRM....................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="41.357">
+    <testcase classname="Create new contacts" name="Add new contact to the registered user" time="40.946">
+        <system-out><![CDATA[Given user is present on the first page of the website......................passed
 Then user clicks on login option............................................passed
-Then user enters "bhupeshrgh@gmail.com" and "Bhupesh@123"...................failed
-Then user clicks on login button............................................skipped
-Then user is on the home page...............................................skipped
-Then close the browser......................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='email']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'LAPTOP-SUKV6OAG', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [fd1068ba-f89f-4412-98fb-7c3330b6afe2, findElement {using=name, value=email}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220216172458, moz:debuggerAddress: localhost:49454, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 8944, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:49454/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fd1068ba-f89f-4412-98fb-7c3330b6afe2
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.stepdefinition.LoginStepDefinition.user_enters_email_and_password(LoginStepDefinition.java:59)
-	at ✽.user enters "bhupeshrgh@gmail.com" and "Bhupesh@123"(file:///C:/Users/hp/eclipse-workspace/FreeCrmBDDFramework/src/test/java/com/features/userLogin.feature:20)
-]]></failure>
-</testcase>
-<testcase classname="FreeCrm login Feature" name="FreeCrm login functionality Testing Scenario 2" time="26.444">
-<failure message="Unable to locate element: //span[text()='Bhupesh Gupta']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'LAPTOP-SUKV6OAG', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [e05c8225-bb58-46b9-9983-031f591c4495, findElement {using=xpath, value=//span[text()='Bhupesh Gupta']}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220216172458, moz:debuggerAddress: localhost:54864, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 684, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:54864/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: e05c8225-bb58-46b9-9983-031f591c4495" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is present on the first page of the website......................passed
-When title on the first page is Free CRM....................................passed
-Then user clicks on login option............................................passed
-Then user enters "bhupesh@gmail.com" and "Bhupesh@".........................passed
+Then user enters "bhupeshrgh@gmail.com" and "Bhupesh@123"...................passed
 Then user clicks on login button............................................passed
-Then user is on the home page...............................................failed
-Then close the browser......................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='Bhupesh Gupta']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'LAPTOP-SUKV6OAG', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e05c8225-bb58-46b9-9983-031f591c4495, findElement {using=xpath, value=//span[text()='Bhupesh Gupta']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220216172458, moz:debuggerAddress: localhost:54864, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 684, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:54864/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e05c8225-bb58-46b9-9983-031f591c4495
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.stepdefinition.LoginStepDefinition.user_is_on_the_home_page(LoginStepDefinition.java:69)
-	at ✽.user is on the home page(file:///C:/Users/hp/eclipse-workspace/FreeCrmBDDFramework/src/test/java/com/features/userLogin.feature:22)
-]]></failure>
-</testcase>
+Given user is on the create new contact page................................passed
+Then user enters all the following details..................................passed
+Then user clicks on save button.............................................passed
+]]></system-out>
+    </testcase>
 </testsuite>

@@ -1,16 +1,21 @@
-Feature: Free Crm contacts creation Feature
+Feature: Create new contacts
+		and enter all the fields data
 
-Scenario Outline: FreeCrm contacts creation Testing Scenario
-
-Given user is present on the home page after loggedin
-When user is on the first page
+Background: Launch url
+Given user is present on the first page of the website
 Then user clicks on login option
-Then user enters "<Email>" and "<Password>"
+Then user enters "bhupeshrgh@gmail.com" and "Bhupesh@123"
 Then user clicks on login button
-Then user is on the home page
-Then close the browser
+		
+@Contacts
+Scenario: Add new contact to the registered user
 
-Examples:
-	| Email | Password |
-	| bhupeshrgh@gmail.com | Bhupesh@123 |
-	| bhupesh@gmail.com | Bhupesh@ | 
+Given user is on the create new contact page
+Then user enters all the following details
+
+| Bhupesh | Gupta | NA | Apple | custom | bhupesh@gmail.com | Personal | crm lead | 9898546758 | Home | gupta | 03 | 1987 | gupta |
+
+Then user clicks on save button
+
+		
+		 

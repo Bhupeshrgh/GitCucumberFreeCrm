@@ -2,7 +2,7 @@ Feature: Amazon order page
 	to check order details 
 	as a registered user 
 	I want to specify the order details page
-
+	
 Background:
 Given a registered user exists
 Given user is on the Amazon login page

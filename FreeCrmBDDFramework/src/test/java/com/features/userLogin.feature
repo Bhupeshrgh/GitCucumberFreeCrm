@@ -1,20 +1,12 @@
 Feature: FreeCrm login Feature
 
-#Without Examples keyword
-#Scenario: FreeCrm login functionality Testing Scenario
-#
-#Given user is present on the first page of the website
-#When title on the first page is Free CRM
-#Then user clicks on login option
-#Then user enters Email and Password
-#Then user clicks on login button
-#Then user is on the home page
-
+Background: Launch url
+Given user is present on the first page of the website
 
 #With Examples keyword
-Scenario Outline: FreeCrm login functionality Testing Scenario
+@CRMLogin
+Scenario Outline: FreeCrm login functionality passed Scenario
 
-Given user is present on the first page of the website
 When title on the first page is Free CRM
 Then user clicks on login option
 Then user enters "<Email>" and "<Password>"
@@ -25,15 +17,18 @@ Then close the browser
 Examples:
 	| Email | Password |
 	| bhupeshrgh@gmail.com | Bhupesh@123 |
-	| bhupesh@gmail.com | Bhupesh@ |
-	
 
+@CRMLogininvalid
+Scenario Outline: FreeCrm login functionality failed Scenario
 
+When title on the first page is Free CRM
+Then user clicks on login option
+Then user enters "<Email>" and "<Password>"
+Then user clicks on login button
+Then user is able to see invalid login message
+Then close the browser
 
-
-
-
-#Scenario: User creating new contact
-#Given user is already on the home page
-#When user is 
+Examples:
+	| Email | Password |
+	| bhupesh@gmail.com | Bhupesh@ |	
 
