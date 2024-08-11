@@ -59,10 +59,9 @@ public class JavaStringPrograms {
 	         
 	       }       
 	        System.out.println(reversalFinal);
+// Remove All Vowels From String 
 	        
-	        
-	        
-	        
-	        
+	        String newInputString = inputString.replaceAll("[AEIOUaeiou]", "");
+	    	        
 	}
 }

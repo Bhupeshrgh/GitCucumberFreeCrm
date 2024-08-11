@@ -106,7 +106,7 @@ public class HashMapTest {
 	         			char maxKey = 0;
 	         			int maxValue = 0;
 	         			
-	         	for(Map.Entry<Character, Integer> entry : hm.entrySet()) {		
+	         	for(Map.Entry<Character, Integer> entry : hm.entrySet()) {			         		
 	         			
 	         	if(entry.getValue() > maxValue ){
 	         			  
@@ -161,6 +161,37 @@ public class HashMapTest {
 	             System.out.println(hmCap);
 	             
 //   {Fruit : Mango, Orange, Apple}, {Vegetable : Carrot, Radish, Onion}, {Flower : Rose, Jasmine, Orchid}
+	             
+// First non repeated and first repeated character 
+	             
+	             String sJ = "JavaConceptOfTheDay";
+	             char[] ch = sJ.toLowerCase().toCharArray();
+	             
+	             HashMap<Character, Integer> hmJ = new HashMap<>();
+	             
+	             for(Character cj : ch){
+	               
+	               if(hmJ.containsKey(cj)){
+	                 
+	            	   hmJ.put(cj , hmJ.get(cj)+1);
+	               }else {
+	            	   hmJ.put(cj , 1);
+	               }
+	             }
+	             System.out.println(hmJ);
+	             
+	             for(Character cj : ch){
+	             
+	             if (hmJ.get(cj) == 1){
+	                System.out.println(cj + " FIrst non repeated");
+	                break;
+	             }}
+	             
+	             for(Character cj : ch){
+	              if (hmJ.get(cj) > 1){
+	                System.out.println(cj + " FIrst repeated");
+	                break;
+	             }}
 	        
 	}
 

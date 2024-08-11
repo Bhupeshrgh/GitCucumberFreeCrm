@@ -1,4 +1,5 @@
 package com.stepdefinition;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -33,15 +34,17 @@ public class HashSetProg {
 		
 		 String st = "javaTpoint is the best learning website";
 		 
-		 st =  st.toLowerCase();
+			char[] stt =  st.toLowerCase().toCharArray();
 	        
 	      //  HashSet<Character> set1 = new HashSet<Character>();        // Insertion order is not maintained
 	         LinkedHashSet<Character> set1 = new LinkedHashSet<>(); 	//Insertion order is maintained
-	        for(int i=0;i<st.length();i++){
-	            set1.add(st.charAt(i));
-	        }
-	        
-	        for(Character c: set1){
+	         for(int i=0;i<stt.length;i++){
+		            set1.add(stt[i]);
+		        }	        
+	         System.out.println(set1); 
+	         
+	// OR print alternate way by loop
+	         for(Character c: set1){
 	            System.out.print(c);
 	        }
 //Remove duplicate string from string array
@@ -77,6 +80,33 @@ public class HashSetProg {
 	       		
 	       		for(char k: setChar) {
 	       			System.out.print(k);	
-	       		}
+	       		}	       		
+	       		
+//6. Pangram
+		         String strr = "The quick brown fox jumps over the lazy dog";
+		         
+		         char[] chr = strr.toLowerCase().toCharArray();
+		         
+		         HashSet<Character> sett = new HashSet<>();
+		         
+		         for (char ch : chr){
+		         
+		         if (ch >= 'a' && ch <= 'z'){
+		            sett.add(ch);
+		         }
+		         }
+		        if(sett.size() == 26){
+		          System.out.println("Panagram");
+		        }else {
+		          System.out.println("Not Panagram");
+		        }	     		
+// Convert HashSet into Array	       
+		        Character[] new_array = new Character[sett.size()];
+		        sett.toArray(new_array);
+		        
+		        for(int i=0;i<new_array.length;i++) {                
+		            System.out.print("  " + new_array[i]);		                           
+		          }  
+		       
 	}
 }

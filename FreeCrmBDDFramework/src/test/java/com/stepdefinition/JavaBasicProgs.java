@@ -107,9 +107,33 @@ public class JavaBasicProgs {
 		          System.out.print(x+" ");      
 		          }     
 		    }
-		    
+// Non-static variable xx cannot be referenced from a static context
+		  
+//		       private int xx = 10;
+//		       static int m1() {
+//		           int y = xx;
+//		           return y;
+//		       }
+//		       public static void main(String[] args) {
+//		         m1();
+//		       }
 
+// Non-static variable xx can be referenced from a static context by creating object of that class		    
+//		    public class Myclass 
+//		    {
+//		       private int x = 10;
+//		       static int m1()
+//		       {
+//		          Myclass obj = new Myclass();
+//		          int y = obj.x;
+//		          return y;
+//		       }
+//		       public static void main(String[] args) {
+//		          System.out.println(m1());
+//		       }
+//		    }
+
+	
 		
 	}
-
 }
