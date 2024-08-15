@@ -43,7 +43,7 @@ public class HashSetProg {
 		        }	        
 	         System.out.println(set1); 
 	         
-	// OR print alternate way by loop
+	// Alternate way to print by loop
 	         for(Character c: set1){
 	            System.out.print(c);
 	        }

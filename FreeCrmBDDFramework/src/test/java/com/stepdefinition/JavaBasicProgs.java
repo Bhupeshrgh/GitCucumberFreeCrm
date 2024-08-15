@@ -12,13 +12,11 @@ public class JavaBasicProgs {
 		x = y;
 		y = temp;
 		
-		System.out.println (x + " " +y );
-		
-	}	
-	
+		System.out.println (x + " " +y );		
+	}
 	
 	public static void main(String[] args) {
-//1. 	
+//1. 	Swap Two numbers 
 //		int num ;
 //		String st;
 //		
@@ -35,7 +33,7 @@ public class JavaBasicProgs {
 		int m = 10, n= 15;
 		swapNum(m, n);
 		
-//3.
+//3. Greatest of three numbers
 		
 		int a = 18, b = 45, c = 15 ;
 		
@@ -133,6 +131,26 @@ public class JavaBasicProgs {
 //		       }
 //		    }
 
+// Get the data type of an variable.
+		    
+		Object code = 'A';
+		    
+	System.out.println(code.getClass().getSimpleName());
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
 	
 		
 	}

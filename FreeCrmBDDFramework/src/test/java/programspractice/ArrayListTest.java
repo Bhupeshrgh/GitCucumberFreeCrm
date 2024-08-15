@@ -156,7 +156,9 @@ public class ArrayListTest {
     
     Collections.reverse(List2);
     System.out.println("List after reversing :\n" + List2);
-// Compare two array lists    
+    
+// Compare two array lists -- Ternary operator 
+       
     ArrayList<String> c3 = new ArrayList<String>();
     for (String e : List1)
        c3.add(List2.contains(e) ? "Yes" : "No");

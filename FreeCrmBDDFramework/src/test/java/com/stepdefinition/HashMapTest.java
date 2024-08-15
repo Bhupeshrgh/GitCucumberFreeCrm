@@ -9,8 +9,19 @@ public class HashMapTest {
 
 	public static void main(String[] args) {
 		
-// keySet() get() values() entrySet() put() contains() containsKey() methods
+// keySet() - only keys, get(i) values() entrySet() put() contains() containsKey() methods
 		
+//Convert array into hashmap		
+		char[] metroCodes = {'A', 'B', 'C', 'D', 'E'};
+		  int i=1;		 
+		  
+		   HashMap<Character, Integer> hm = new HashMap<>();
+		   
+		   for (Character c : metroCodes){
+		     hm.put(c, i++);		  
+		   } 
+		   System.out.println(hm);		
+// 		
   	HashMap <Integer,String> map = new HashMap<Integer,String>();
 		   
 		   map.put(1,"Mango");  //Put elements in Map  
@@ -66,6 +77,7 @@ public class HashMapTest {
 	        String s = "This is to check occurance";
 	        
 	        s = s.replaceAll(" ", "").toLowerCase();
+	        
 	               
 	  //      char[] c = s.toCharArray(); We can also convert string  into char array
 	        
@@ -89,6 +101,9 @@ public class HashMapTest {
 	         		String str = "LOOP Fool pull";
 	         		  
 	         		  char[] c = str.replaceAll(" ", "").toLowerCase().toCharArray();
+	         		  
+//	      	        int[] c = {1, 2, 8, 3, 2, 2, 2, 5, 1};  
+//	      	        HashMap<Integer, Integer> hm = new HashMap<>();
 	         		  
 	         		  HashMap<Character, Integer> hm = new HashMap<>();
 	         		  
@@ -178,7 +193,7 @@ public class HashMapTest {
 	            	   hmJ.put(cj , 1);
 	               }
 	             }
-	             System.out.println(hmJ);
+	             System.out.println(hmJ); // {a=3, c=2, d=1, e=2, f=1, h=1, j=1, n=1, o=2, p=1, t=2, v=1, y=1}
 	             
 	             for(Character cj : ch){
 	             
@@ -192,7 +207,47 @@ public class HashMapTest {
 	                System.out.println(cj + " FIrst repeated");
 	                break;
 	             }}
-	        
-	}
+// Get the data type of variables
+	             HashMap<String, Object> hm = new HashMap<>();
+	             
+	             hm.put("a", "string type");
+	             hm.put("b", 'B');
+	             hm.put("c", true);
+	             hm.put("d", 34.00);
 
+	                System.out.println(hm);
+	              
+	              for (Map.Entry<String, Object> entry : hm.entrySet()){
+
+	                Object ob = entry.getValue();
+	                
+	               System.out.println(entry.getKey() + " "+ ob.getClass().getSimpleName());
+	                
+	              }	 
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	              
+	}
 }

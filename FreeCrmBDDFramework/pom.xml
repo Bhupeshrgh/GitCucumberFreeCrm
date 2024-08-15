@@ -19,6 +19,14 @@
   </properties>
 
   <dependencies>
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.17.2</version>
+</dependency>
+
 <dependency>
 <groupId>io.cucumber</groupId>
 <artifactId>cucumber-java</artifactId>
@@ -123,6 +131,22 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+			<configuration>
+			<suiteXmlFiles>testng.xml</suiteXmlFiles>
+<properties>
+<property>
+<name>parallel</name>
+<value>tests</value>
+</property>
+
+<property>
+<name>threadCount</name>
+<value>3</value>
+</property>
+
+</properties>
+
+			</configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
